@@ -29,8 +29,8 @@ public class HistorialEntity implements Serializable
 {
     
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="historial_seq_gen")
-    @SequenceGenerator(name="historial_seq_gen", sequenceName="HISTORIAL_SEQU")
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="historial_seq_gen")
+//    @SequenceGenerator(name="historial_seq_gen", sequenceName="HISTORIAL_SEQU")
     private Long id;
     
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true) 

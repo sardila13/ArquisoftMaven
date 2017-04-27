@@ -25,8 +25,8 @@ import javax.persistence.TemporalType;
 public class ConfiguracionEntity implements Serializable
 {
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="configuracion_seq_gen")
-    @SequenceGenerator(name="configuracion_seq_gen", sequenceName="CONFIGURACION_SEQU")
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="configuracion_seq_gen")
+//    @SequenceGenerator(name="configursacion_seq_gen", sequenceName="CONFIGURACION_SEQU")
     private Long id;
     
 //    @OneToOne(mappedBy = "configuracion", cascade = CascadeType.ALL)

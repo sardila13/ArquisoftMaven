@@ -25,8 +25,8 @@ public class MedicoEntity implements Serializable
     
     @Id
     
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="medico_seq_gen")
-    @SequenceGenerator(name="medico_seq_gen", sequenceName="MEDICO_SEQU")
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="medico_seq_gen")
+//    @SequenceGenerator(name="medico_seq_gen", sequenceName="MEDICO_SEQU")
     private Long id;
     
     @ManyToMany

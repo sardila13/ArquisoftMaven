@@ -31,8 +31,8 @@ import logica.interfaces.IHospital;
 @Singleton
 public class ConfiguracionlLogic implements IHospital
 {
-    @PersistenceContext(unitName = "Oracle final" , type = PersistenceContextType.TRANSACTION)
-    protected EntityManager em = Persistence.createEntityManagerFactory("Oracle final", System.getProperties()).createEntityManager();
+    @PersistenceContext(unitName = "Derby" , type = PersistenceContextType.TRANSACTION)
+    protected EntityManager em = Persistence.createEntityManagerFactory("Derby", System.getProperties()).createEntityManager();
     
     @Resource
             UserTransaction userTran;

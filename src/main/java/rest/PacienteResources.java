@@ -50,7 +50,7 @@ public class PacienteResources
     @POST
     public void createPaciente (PacienteDTO p )
     {
-        System.out.println("Paciente: " + p.toString());
+//        System.out.println("Paciente: " + p.toString());
         logic.crearPaciente(p);
     }
     
@@ -65,7 +65,7 @@ public class PacienteResources
     @Path("/{idPaciente:\\d+}")
     public PacienteDTO getPaciente(@PathParam("idPaciente")Long idPaciente)
     {
-        System.out.println("Resoruces " + idPaciente);
+//        System.out.println("Resoruces " + idPaciente);
         return logic.buscarPaciente(idPaciente);
     }
     

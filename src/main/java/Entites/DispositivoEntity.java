@@ -30,8 +30,8 @@ import uk.co.jemos.podam.common.PodamExclude;
 public class DispositivoEntity implements Serializable
 {
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="dispositivo_seq_gen")
-    @SequenceGenerator(name="dispositivo_seq_gen", sequenceName="DISPOSITIVO_SEQU")
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="dispositivo_seq_gen")
+//    @SequenceGenerator(name="dispositivo_seq_gen", sequenceName="DISPOSITIVO_SEQU")
     
     
     

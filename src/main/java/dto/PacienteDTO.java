@@ -69,7 +69,7 @@ public class PacienteDTO {
     
     public void agregarAlerta(AlertaDTO alerta)
     {
-        System.out.println("Agregando Alerta");
+//        System.out.println("Agregando Alerta");
         alertas.add(alerta);
     }
     
@@ -240,7 +240,7 @@ public class PacienteDTO {
         }
         
         PacienteEntity ent = new PacienteEntity(nombre, edad, d, medicosEntities(), h,his , alertasEntities(), consejosEntities());
-//        ent.setId(id);
+        ent.setId(id);
         
         return ent;
     }

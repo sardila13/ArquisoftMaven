@@ -26,8 +26,8 @@ public class AlertaLogic implements IAlertaLogic
     @Inject
     private HospitalLogic hospitalLogic;
     
-    @PersistenceContext(unitName = "Oracle final")
-    protected EntityManager em = Persistence.createEntityManagerFactory("Oracle final", System.getProperties()).createEntityManager();
+    @PersistenceContext(unitName = "Derby")
+    protected EntityManager em = Persistence.createEntityManagerFactory("Derby", System.getProperties()).createEntityManager();
     
     @Resource
             UserTransaction userTran;

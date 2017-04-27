@@ -41,8 +41,8 @@ import logica.interfaces.IPaciente;
 @Singleton
 public class PacienteLogic implements IPaciente {
     
-    @PersistenceContext(unitName = "Oracle final", type = PersistenceContextType.TRANSACTION)
-    protected EntityManager em = Persistence.createEntityManagerFactory("Oracle final", System.getProperties()).createEntityManager();
+    @PersistenceContext(unitName = "Derby", type = PersistenceContextType.TRANSACTION)
+    protected EntityManager em = Persistence.createEntityManagerFactory("Derby", System.getProperties()).createEntityManager();
     
 //    @Resource
 //            UserTransaction userTran;
@@ -59,10 +59,10 @@ public class PacienteLogic implements IPaciente {
         try{
 //            userTran.begin();
             PacienteEntity pe = paciente.toEntity();
-            System.out.println("Id antes " + pe.getId());
+//            System.out.println("Id antes " + pe.getId());
             em.persist(pe);
 //            userTran.commit();
-            System.out.println("Id despues " + pe.getId());
+//            System.out.println("Id despues " + pe.getId());
             return pe.toDTO();
         }
         catch(Exception e){
@@ -74,7 +74,7 @@ public class PacienteLogic implements IPaciente {
     
     @Override
     public PacienteDTO buscarPaciente(Long id) {
-        System.out.println("Logic " + id);
+//        System.out.println("Logic " + id);
         return em.find(PacienteEntity.class, id).toDTODetail();
     }
     

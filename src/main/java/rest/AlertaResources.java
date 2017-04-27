@@ -65,7 +65,7 @@ public class AlertaResources
     public void createAlerta(AlertaDTO alerta,@PathParam("idDispositivo") Long idDispositivo)
     {
 //        System.out.println("La instancia es " + logic.hashCode());
-       System.out.println("Hola " + idDispositivo);
+//       System.out.println("Hola " + idDispositivo);
        dispositivologic.agregarAlerta(idDispositivo, alerta);
 //        logic.crearAlerta(alerta, idDispositivo);
     }
@@ -100,6 +100,7 @@ public class AlertaResources
         PacienteDTO p = new PacienteDTO("Brandon", 20 , h);
         p.setId(1L);
         PacienteDTO e = pacienteLogic.crearPaciente(p);
+        System.out.println("Id paciente " + e.getId());
        
         
         ConfiguracionDTO config = new ConfiguracionDTO("config ");
@@ -114,7 +115,7 @@ public class AlertaResources
 
         dispositivo.setConfiguration(config);
         dispositivo.setId(1L);
-        System.out.println("Paciente en dispositivo" + dispositivo.getPaciente().getId());
+//        System.out.println("Paciente en dispositivo" + dispositivo.getPaciente().getId());
         dispositivologic.crearDispositivo(dispositivo);
         
         AlertaDTO a = new AlertaDTO(0, presion,frecuencia, estres, /*dispositivo ,*/ AlertaDTO.AMARILLO, ubicacion);

@@ -35,8 +35,8 @@ public class PacienteEntity implements Serializable
 //    DispositivoLogic dispositivoLogic;
     
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="paciente_seq_gen")
-    @SequenceGenerator(name="paciente_seq_gen", sequenceName="PACIENTE_SEQU")
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="paciente_seq_gen")
+//    @SequenceGenerator(name="paciente_seq_gen", sequenceName="PACIENTE_SEQU")
     private Long id;
     
     private String nombre;

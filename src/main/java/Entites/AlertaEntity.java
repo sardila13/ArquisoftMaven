@@ -23,8 +23,8 @@ import javax.persistence.TemporalType;
 public class AlertaEntity implements Serializable
 {
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="alerta_seq_gen")
-    @SequenceGenerator(name="alerta_seq_gen", sequenceName="ALERTA_SEQU")
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="alerta_seq_gen")
+//    @SequenceGenerator(name="alerta_seq_gen", sequenceName="ALERTA_SEQU")
     private Long id;
     
     private Integer esEmergencia;

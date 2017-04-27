@@ -21,8 +21,8 @@ import javax.persistence.SequenceGenerator;
 public class AmbulanciaEntity implements Serializable
 {
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="ambulancia_seq_gen")
-    @SequenceGenerator(name="ambulancia_seq_gen", sequenceName="AMBULANCIA_SEQU")
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="ambulancia_seq_gen")
+//    @SequenceGenerator(name="ambulancia_seq_gen", sequenceName="AMBULANCIA_SEQU")
     private Long id;
     
     public AmbulanciaEntity()
